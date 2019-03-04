@@ -8,7 +8,7 @@
         "build:test": "cross-env NODE_ENV=development SERVER_ENV=test webpack --mode development --progress",
         "build:prod": "cross-env NODE_ENV=production SERVER_ENV=prod webpack --mode production --progress"
     },
-    "author": "XHT",
+    "author": "",
     "license": "ISC",
     "sideEffects": false,
     "dependencies": {

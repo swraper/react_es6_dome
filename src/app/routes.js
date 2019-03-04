@@ -15,7 +15,7 @@ export default () => (
 
 const RouterProxy = ({ component: Component, ...rest }) => {
     console.log(rest);
-    rest.title && refreshTitle(rest.title);
+    if(rest.title ) document.title = rest.title;
 
     let JoinPgae = false;
 
