@@ -1,4 +1,4 @@
-import httpRequest from '../utils/httpRequest';
+import httpRequest from './httpRequest';
 
 
 

@@ -13,12 +13,7 @@ const post = (url, options) => {
     let header = {
         'Content-Type': 'application/json',
     };
-    if (options.authorization) {
-        header.Authorization = options.authorization;
-    }
-    if (options.channel) {
-        header.channel = options.channel;
-    }
+
     return _fetch(fetch(url, {
         headers: header,
         method: 'POST',
@@ -28,25 +23,6 @@ const post = (url, options) => {
     }), 60000);
 };
 
-const _post = (url, options) => {
-    options = options || {};
-    let header = {
-        'Content-Type': 'application/json',
-    };
-    if (options.authorization) {
-        header.Authorization = options.authorization;
-    }
-    if (options.channel) {
-        header.channel = options.channel;
-    }
-    return _fetch(fetch(url, {
-        headers: header,
-        method: 'POST',
-        mode: 'cors',
-        credentials: 'include',
-        body: JSON.stringify(options.data || {})
-    }), 60000);
-};
 
 const _fetch = (fetch_promise, timeout) => {
     let abort_fn = null;
@@ -73,5 +49,4 @@ const _fetch = (fetch_promise, timeout) => {
 export default {
     get,
     post,
-    _post,
 };

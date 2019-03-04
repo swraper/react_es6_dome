@@ -1,5 +1,5 @@
-import APIs from '../constants/APIs';
-import httpRequest from './request';
+import APIs from './APIs';
+import httpRequest from '../utils/request';
 
 const APIHelper = {
     // test
