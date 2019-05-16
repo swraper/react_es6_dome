@@ -12,11 +12,10 @@
     "license": "ISC",
     "sideEffects": false,
     "dependencies": {
-        "babel-runtime": "^6.26.0",
-        "prop-types": "^15.6.2",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
         "react-router-dom": "^4.2.2",
+        "prop-types": "^15.6.2",
         "styled-components": "^4.1.3",
         "whatwg-fetch": "^2.0.4"
     },

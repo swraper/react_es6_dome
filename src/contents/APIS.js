@@ -7,7 +7,7 @@ const HOST = {
 const env = HOST[__SERVER_ENV__];
 
 const APIs = {
-    login:`${evn}app/login`,  // 临时test接口
+    Login:`${env}user/login`,  // 临时test接口
 };
 
 export default {
